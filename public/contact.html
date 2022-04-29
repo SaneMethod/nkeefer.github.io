@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathaniel Keefer - Dancer, Teacher, Choreographer - Contact</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <link href="static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="static/css/common.css" rel="stylesheet" />
+    <link href="static/lib/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="static/lib/jquery/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#mailtoLink').on('click', function(event){
+                event.preventDefault();
+                window.location = atob($(this).attr('href'));
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="wrap">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span8 offset2 hero-unit" style="margin-top:50px; margin-bottom:50px;">
+                <h3>Contact Details</h3>
+                <p>
+                    <img src="static/img/res/phoneIcon.png" />
+                    <a href="tel:16475219116">Cell: 1-647-521-9116</a>
+                </p>
+                <p>
+                    <img src="static/img/res/emailIcon.png" />
+                    <a id="mailtoLink" href="bWFpbHRvOmV2ZW50aG9yaXhvbkBnbWFpbC5jb20=">Email Me</a>
+                </p>
+                <p>
+                    <img src="static/img/res/fbbfIcon.png" />
+                    <a href="https://www.facebook.com/nathaniel.keefer.50">Facebook</a>
+                </p>
+                <p>
+                    <img src="static/img/res/ytbIcon.png" />
+                    <a href="http://www.youtube.com/user/NathanielKeefer">Youtube</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <a class="brand">Designed By Sane Method &copy; 2013</a>
+            <div class="shareIcons">
+                <a target="_blank" href="http://www.youtube.com/user/NathanielKeefer">
+                    <div id="youtube" class="shareIcon"></div></a>
+                <a target="_blank" href="https://www.facebook.com/nathaniel.keefer.50">
+                    <div id="facebook" class="shareIcon"></div></a>
+            </div>
+            <div class="pull-right">
+                <ul class="nav">
+                    <li><a id="goHome" href="/">Home</a></li>
+                    <li><a href="static/NathanielKeeferDanceResume.pdf">About</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.questionText{
+    margin-top:0;
+}
+.lefty{
+    background:transparent;
+}
+.leftyStart, .leftyHeader{
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./static/img/lefty.png', sizingMethod='scale');
+}
+.leftyHeader{
+    min-width:15%;
+    min-height:25%;
+}
+.leftyStart{
+    margin:0 0 0 10px;
+    min-width:22%;
+}
+#startView{
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./static/img/usaOutline.png', sizingMethod='scale');
+    width:80%;
+    height:650px;
+    background:transparent;
+}

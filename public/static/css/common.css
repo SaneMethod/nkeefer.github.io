@@ -1,0 +1,267 @@
+html, body{
+    margin:0;
+    padding:0 !important;
+    height:100%;
+    width:100%;
+    background:#010101;
+}
+
+#wrap{
+    height:auto !important;
+    margin:0 auto -60px;
+    min-height:100%;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+.title{
+    font-size:4em;
+    margin-bottom:5%;
+    margin-top:7%;
+}
+
+.highlight{
+    color:#47a5bb;
+}
+
+div.section, div.section[class*="span"]{
+    display:none;
+}
+
+div.section.active, div.section.active[class*="span"]{
+    display:block;
+}
+
+/** Action selection and forms */
+#actionwrap, #signinwrap{
+    text-align:center;
+}
+
+#actionwrap input, #actionwrap select, #actionwrap button{
+    display:inline-block;
+    margin-right:1em;
+}
+
+button.btn.btn-mega{
+    font-size:22px;
+    color:#5d5e60;
+    padding-bottom:0.5em;
+    padding-top:0.5em;
+}
+/** End Action selection and forms */
+
+/** Cover Flow */
+.coverwrap{
+    overflow:hidden;
+}
+.coverflow{
+    width:100%;
+    height:600px;
+    -webkit-perspective:500px;
+    perspective:500px;
+    -webkit-transform-style:preserve-3d;
+    transform-style:preserve-3d;
+}
+
+/** Needed for webkit browsers - makes sures transformation of element doesn't deprive of us
+actable area for element. */
+.coverflow .flowme:before{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.coverflow .flowme{
+    position:absolute;
+    width:500px;
+    min-height:300px;
+    left:40%;
+    top:40%;
+    margin-left:-100px;
+    margin-top:-75px;
+    cursor:pointer;
+    z-index:10;
+    box-shadow:0 5px 3px #222;
+
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    -webkit-transition:all 1s;
+    transition:all 1s;
+}
+
+.coverbar{
+    background:#000000;
+    border-radius:8px;
+    height:20px;
+    margin:auto auto 1em;
+    width:90%;
+}
+
+.coverbar .slider{
+    border-radius:8px;
+    background: #e2ebf3; /* Old browsers */
+    background: -webkit-linear-gradient(top, #e2ebf3 0%,#c8d4e2 73%,#bcc9d2 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top, #e2ebf3 0%,#c8d4e2 73%,#bcc9d2 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #e2ebf3 0%,#c8d4e2 73%,#bcc9d2 100%); /* W3C */
+    box-shadow: 0 2px 2px #CCCCCC;
+    height: 26px;
+    margin-top: -3px;
+    position: absolute;
+    width: 10%;
+}
+
+.coverbar .slider:hover{
+    background: #e2ebf3; /* Old browsers */
+    background: -webkit-linear-gradient(top, #e8f1f9 0%, #d3dfed 73%, #d4e1ea 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top, #e8f1f9 0%, #d3dfed 73%, #d4e1ea 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #e8f1f9 0%, #d3dfed 73%, #d4e1ea 100%); /* W3C */
+}
+
+.coverbar .slider:active{
+    background: #e2ebf3; /* Old browsers */
+    background: -webkit-linear-gradient(top, #d5dee6 0%, #c0ccda 73%, #b1bfc8 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top, #d5dee6 0%, #c0ccda 73%, #b1bfc8 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #d5dee6 0%, #c0ccda 73%, #b1bfc8 100%); /* W3C */
+}
+
+.coverbar .slider .sliderLine{
+    background:url("../img/sliderLines.png") no-repeat;
+    height:20px;
+    margin:3px auto auto;
+    width:19px;
+}
+/** End Cover Flow */
+
+/** Registration */
+#regwrap{
+    text-align:center;
+    margin-top:60px;
+}
+
+#regwrap .input-prepend{
+    display:block;
+    margin:0 0 10px;
+}
+/** End Registration */
+
+/** Front ICE */
+div.back-ice{
+    background:url("../img/res/Frontice.png") no-repeat center / contain  transparent;
+}
+
+div.back-ice.visible-phone{
+    height:300px;
+}
+
+div.back-ice.hidden-phone{
+    background-image:url('../img/res/FrontStage.jpg');
+    height:400px;
+}
+
+div.img-ice{
+    background:no-repeat center / contain transparent;
+    height:540px;
+    -webkit-transition:opacity 1.5s;
+    transition:opacity 2s;
+}
+
+div.left-ice{
+    background-image:url('../img/res/FrontLeft.png');
+}
+
+div.mid-ice{
+    background-image:url('../img/res/FrontMid.png');
+}
+
+div.right-ice{
+    background-image:url('../img/res/FrontRight.png')
+}
+/** End Front ICE */
+
+/** Footer Nav */
+#footer{
+    height:60px;
+    clear:both;
+    color:#bababa;
+    font-size:16px;
+}
+
+#footer .navbar{
+    height:60px;
+    margin:0;
+}
+
+#footer .navbar .navbar-inner{
+    background:#f6f6f6;
+    min-height:45px;
+}
+
+#footer .brand{
+    font-size:0.8em;
+    line-height:2.1em;
+    float:left;
+}
+
+#footer .shareIcons{
+    float:left;
+    font-size:0.8em;
+    height:45px;
+}
+
+.shareIcon{
+    width:32px;
+    height:32px;
+    margin:5px;
+    float:left;
+    transition:transform 0.5s ease-in-out;
+}
+
+.shareIcon:hover{
+    transform:rotate(360deg);
+}
+
+.shareIcon:active{
+    transform:scale(1.1);
+}
+
+#pinterest{
+    background:url('../img/pinterest.png');
+}
+
+#gplus{
+    background:url('../img/gplus.png');
+}
+
+#in{
+    background:url('../img/in.png');
+}
+
+#facebook{
+    background:url('../img/facebook.png');
+}
+
+#twit{
+    background:url('../img/twit.png');
+}
+
+#youtube{
+    background:url('../img/youtube.png');
+}
+
+#footer .nav a{
+    padding:13px 15px;
+    outline:0 none;
+}
+
+#footer .nav a:hover, #footer .nav a:active{
+    color:#47a5bb;
+}
+
+#footer .nav .active a{
+    box-shadow:none;
+}
+/** End Footer Nav */
