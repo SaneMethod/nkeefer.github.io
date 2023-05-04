@@ -212,6 +212,10 @@ div.right-ice{
     height:45px;
 }
 
+#footer .shareIcons a{
+    text-decoration: none;
+}
+
 .shareIcon{
     width:32px;
     height:32px;
