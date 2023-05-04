@@ -264,4 +264,14 @@ div.right-ice{
 #footer .nav .active a{
     box-shadow:none;
 }
+
+@media only screen and (max-device-width:767px)  {
+    /* Hide the brand and share icons on mobile devices to avoid crowding out the nav */
+    #footer .brand{
+        display:none;
+    }
+    #footer .shareIcons{
+        display:none;
+    }
+}
 /** End Footer Nav */
