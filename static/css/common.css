@@ -269,7 +269,7 @@ div.right-ice{
     box-shadow:none;
 }
 
-@media(max-width: 979px) {
+@media (max-width: 979px) {
     /* Hide the brand and share icons on mobile devices to avoid crowding out the nav */
     #footer .brand{
         display:none !important;
