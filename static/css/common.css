@@ -265,7 +265,7 @@ div.right-ice{
     box-shadow:none;
 }
 
-@media only screen and (max-device-width:767px)  {
+@media only screen and (max-width:767px)  {
     /* Hide the brand and share icons on mobile devices to avoid crowding out the nav */
     #footer .brand{
         display:none;
